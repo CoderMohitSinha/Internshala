@@ -23,7 +23,7 @@ void Display()
 	cout << "\n\n\n\t\t\t\t   RULES OF THE GAME   :     \n";
 	cout << "\t\t\t\t   1) 4 MARKS WILL BE AWARDED FOR CORRECT ANSWER   \n";
 	cout << "\t\t\t\t   2) NO MARKS WILL AWARDED FOR INCORRECT ANSWER   \n";
-	cout << "\t\t\t\t   3) SCORE CARD WILL BE GIVEN AT END         \n";
+	cout << "\t\t\t\t   3) SCORE CARD WILL BE GIVEN AT THE END         \n";
 	system("pause");
 	system("cls");
 }
