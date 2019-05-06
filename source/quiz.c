@@ -29,5 +29,16 @@ void main()
 	FILE *output;
 	fp = fopen("question_bank.txt", "r");
 	output = fopen("your_answers.txt", "w");
+	
+	if (fp == NULL)
+	{
+		printf("\n\n\n \t\t\t question_bank File Can't Be OPENED \t\t\t \n\n\n");
+	}
+	if (output == NULL)
+	{
+		printf("\n\n\n \t\t\t your_answers File Can't Be CREATED \t\t\t \n\n\n");
+	}
+
+	Display();
 }	
 	
