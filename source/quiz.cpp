@@ -27,3 +27,12 @@ void Display()
 	system("pause");
 	system("cls");
 }
+
+void asked(string option, string option1, string option2,
+		   string option3, string option4, string correct, string category, ofstream &fp, int *score)
+{
+	cout << "Your Option : ";
+	cin >> option;
+	transform(option.begin(), option.end(), option.begin(), ::toupper);
+	option.append(")");
+}
