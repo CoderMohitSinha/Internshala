@@ -52,5 +52,19 @@ void asked(string option, string option1, string option2,
 		*score += 4;
 		fp << " You are awarded 4 marks for this correct answer " << endl;
 	}
+	else
+	{
+		string correctanswer;
+		if (correct[0] == option1[0])
+			correctanswer = option1;
+		if (correct[0] == option2[0])
+			correctanswer = option2;
+		if (correct[0] == option3[0])
+			correctanswer = option3;
+		if (correct[0] == option4[0])
+			correctanswer = option4;
+
+		string wronganswer;
+	 }	
 	
 }
