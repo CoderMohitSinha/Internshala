@@ -35,4 +35,22 @@ void asked(string option, string option1, string option2,
 	cin >> option;
 	transform(option.begin(), option.end(), option.begin(), ::toupper);
 	option.append(")");
+	
+	fp << category << endl;
+
+	if (option[0] == correct[0])
+	{
+		if (option[0] == option1[0])
+			fp << " Your entered correct answer  : " << option1 << endl;
+		if (option[0] == option2[0])
+			fp << " Your entered correct answer  : " << option2 << endl;
+		if (option[0] == option3[0])
+			fp << " Your entered correct answer  : " << option3 << endl;
+		if (option[0] == option4[0])
+			fp << " Your entered correct answer  : " << option4 << endl;
+
+		*score += 4;
+		fp << " You are awarded 4 marks for this correct answer " << endl;
+	}
+	
 }
