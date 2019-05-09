@@ -65,6 +65,19 @@ void asked(string option, string option1, string option2,
 			correctanswer = option4;
 
 		string wronganswer;
-	 }	
-	
+		if (option[0] == option1[0])
+			wronganswer = option1;
+		if (option[0] == option2[0])
+			wronganswer = option2;
+		if (option[0] == option3[0])
+			wronganswer = option3;
+		if (option[0] == option4[0])
+			wronganswer = option4;
+
+		fp << " You entered     : " << wronganswer << endl;
+		fp << " Correct answer  : " << correctanswer << endl;
+		fp << " You are awarded 0 marks for this wrong answer " << endl;
+	}
+	fp << " -----------------------------------------------------------------------------\n";
+	fp << " -----------------------------------------------------------------------------\n";
 }
