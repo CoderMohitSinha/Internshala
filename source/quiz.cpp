@@ -101,4 +101,9 @@ int main()
 		cout << "\n\n\n \t\t\t your_answers File Can't Be CREATED \t\t\t \n\n\n";
 	}
 	Display();
+	
+	for (int i = 0; i < 30; i++)
+	{
+		arr[i] = 10 * i + 1;
+	}
 }	
