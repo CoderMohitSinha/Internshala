@@ -1,3 +1,5 @@
+//All the constraints have been taken care of as per the task!
+
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <conio.h>
