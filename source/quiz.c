@@ -4,13 +4,14 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <stdlib.h>
 #include <ctype.h>
 #define QNO 30
 #define totques 10
 #define size 200
 
 void asked(char option[size], const char option1[size], const char option2[size],
-					 const char option3[size], const char option4[size], const char correct[size], const char category[size], FILE *fp, int *);
+		   const char option3[size], const char option4[size], const char correct[size], const char category[size], FILE *fp, int *);
 
 void Display();
 
@@ -28,6 +29,7 @@ void main()
 	FILE *output;
 	fp = fopen("question_bank.txt", "r");
 	output = fopen("your_answers.txt", "w");
+
 	if (fp == NULL)
 	{
 		printf("\n\n\n \t\t\t question_bank File Can't Be OPENED \t\t\t \n\n\n");
@@ -113,6 +115,8 @@ void main()
 		system("cls");
 	}
 
+	printf("CONGRATULATIONS! on completing the Quiz\n\n\n");
+
 	fprintf(output, " \n You got total %d out of 40 ", score);
 
 	fclose(fp);
@@ -131,7 +135,7 @@ void main()
 }
 
 void asked(char option[size], const char option1[size], const char option2[size], const char option3[size], const char option4[size],
-					 const char correct[size], const char category[size], FILE *fp, int *score)
+		   const char correct[size], const char category[size], FILE *fp, int *score)
 {
 	printf("Your Option : ");
 	scanf("%str", &option[0]);
@@ -158,6 +162,7 @@ void asked(char option[size], const char option1[size], const char option2[size]
 
 		fprintf(fp, " \n You are awarded 4 marks for this correct answer \n ");
 	}
+
 	else
 	{
 
@@ -206,7 +211,7 @@ void Display()
 	printf("\n\n\n\t\t\t\t   RULES OF THE GAME   :     \n");
 	printf("\t\t\t\t   1) 4 MARKS WILL BE AWARDED FOR CORRECT ANSWER     \n");
 	printf("\t\t\t\t   2) NO MARKS WILL AWARDED FOR INCORRECT ANSWER    \n");
-	printf("\t\t\t\t   3) SCORE CARD WILL BE GIVEN AT THE END         \n");
+	printf("\t\t\t\t   3) SCORE CARD WILL BE GIVEN AT END         \n");
 	system("pause");
 	system("cls");
 }
