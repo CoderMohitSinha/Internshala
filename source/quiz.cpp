@@ -81,3 +81,14 @@ void asked(string option, string option1, string option2,
 	fp << " -----------------------------------------------------------------------------\n";
 	fp << " -----------------------------------------------------------------------------\n";
 }
+
+int main()
+{
+
+	ifstream fins("question_bank.txt");
+	ofstream output("your_answers.txt");
+	string text;
+	string option1, option2, option3, option4, option, correct, category;
+	int score = 0;
+	int arr[QNO];
+}	
