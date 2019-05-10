@@ -91,4 +91,14 @@ int main()
 	string option1, option2, option3, option4, option, correct, category;
 	int score = 0;
 	int arr[QNO];
+	
+	if (fins == NULL)
+	{
+		cout << "\n\n\n \t\t\t question_bank File Can't Be OPENED \t\t\t \n\n\n";
+	}
+	if (output == NULL)
+	{
+		cout << "\n\n\n \t\t\t your_answers File Can't Be CREATED \t\t\t \n\n\n";
+	}
+	Display();
 }	
