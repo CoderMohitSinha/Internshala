@@ -104,7 +104,7 @@ int main()
 		}
 		system("cls");
 	}
-		
+
 	cout << "CONGRATULATIONS! on completing the Quiz";
 
 	output << "\n You got " << score / 4 << " correct answer with total score : " << score << " out of 40 ";
@@ -126,8 +126,8 @@ int main()
 
 void asked(string option, string option1, string option2,
 		   string option3, string option4, string correct, string category, ofstream &fp, int *score)
-{ 
-	static map<string, int> category_map; 
+{
+	static map<string, int> category_map;
 	category_map.insert(pair<string, int>("Sports", 0));
 	category_map.insert(pair<string, int>("General Science", 0));
 	category_map.insert(pair<string, int>("World History", 0));
